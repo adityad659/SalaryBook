@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+
+    tools:context=".MainActivity$BusinessDetails"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/owner_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+        android:drawablePadding="16dp"
+        android:drawableTint="@color/colorTextPrimary"
+        />
+    <TextView
+        android:id="@+id/m1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/opening_balance"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/m2"
+        android:layout_below="@id/m1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="left"
+        android:text="Add staff's previous dues or outstanding balance"
+        android:textColor="@color/colorTextSecondary"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/m3"
+        android:layout_below="@+id/m2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+            android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/radioGroup">
+        <RadioButton
+            android:id="@+id/you_paid"
+            android:buttonTint="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="You Paid"
+            android:paddingLeft="5dp"
+            android:paddingRight="35dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/radobtn"
+            android:textSize="14sp"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/you_took"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimary"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="5dp"
+            android:text="You Took"
+            android:paddingLeft="5dp"
+            android:paddingRight="35dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/radobtn"
+            android:textSize="14sp"
+            android:checked="false"/>
+
+    </RadioGroup>
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/salary_amount"
+        android:layout_below="@id/m3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        app:errorEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Amount"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/buttonContinue"
+android:enabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/backgro_btn"
+            android:text="  Continue"
+            android:textAlignment="textStart"
+            android:drawableRight="@drawable/ic_continue_arrow"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:onClick="SalAmount"
+            android:textStyle="bold"
+            />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <import type="com.example.payroll.BindingAdapters.StaffBinding"/>
+        <variable
+            name="staff"
+            type="com.example.payroll.data.EmpMonthlyClosBal" />
+        <variable
+            name="monthValues"
+            type="com.example.payroll.util.DataBindersValues" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/e2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="18dp"
+            android:layout_below="@id/owner_name"
+            android:background="@drawable/attendance_btn"
+            android:orientation="vertical">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal"
+                android:background="@color/colorWhite">
+
+                <TextView
+                    android:id="@+id/nam1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="name"
+                    android:text="@{staff.empName}"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorTextPrimary"
+                    android:layout_centerInParent="true"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/advance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="advance"
+                    android:text="@{staff.closingBalance>=0 ? `Advance`:`Pending`}"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16dp"
+
+                    android:textColor="@color/colorTextPrimary"
+                    android:layout_centerInParent="true"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal"
+                android:background="@color/colorWhite"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{monthValues.monthYear}"
+                    android:hint="date"
+                    android:textSize="12sp"
+
+                    android:layout_weight="1"
+                    android:textColor="@color/colorTextPrimary"
+                    android:layout_centerInParent="true" />
+
+                <TextView
+                    android:id="@+id/amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="amount"
+                    android:numToCurrency="@{staff.closingBalance}"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorTextPrimary"
+
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eaeaea" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/m1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@{monthValues.month + ` Salary`}"
+                    android:hint="feb salary"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/Feb_salary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="1000"
+                    android:numToCurrency="@{staff.calcsalary}"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eaeaea" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/m2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@{monthValues.lastMonth + ` Closing Balance`}"
+                    android:hint="Jan Closing Balance"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/Jan_closing_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="1000"
+
+                    android:numToCurrency="@{staff.lastClosingBalance}"
+
+                    android:textAlignment="textStart"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eaeaea" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/m3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@{monthValues.month + ` Payments`}"
+                    android:hint="Feb Payments"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/Feb_Payments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="1000"
+                    android:numToCurrency="@{staff.payment}"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

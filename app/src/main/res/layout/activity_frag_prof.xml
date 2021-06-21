@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fragment_top"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimary"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textSize="20sp"
+            android:layout_margin="16dp"
+            android:textColor="@color/colorWhite"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"/>
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/personal"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/colorWhite"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Personal Info"
+            android:background="@color/colorWhite"
+
+            android:textSize="20sp"
+            android:layout_margin="16dp"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            />
+    </FrameLayout>
+    <com.nightkyb.listtile.ListTile
+        style="@style/ListTileStyle"
+        android:id="@+id/listTile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lt_leading="@drawable/name_edit"
+        app:lt_leading_right_margin="16dp"
+        app:lt_subtitle="Name"
+        app:lt_subtitle_color="@color/text_black"
+        app:lt_subtitle_textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+        app:lt_subtitle_top_margin="4dp"
+        app:lt_title="Your Name"
+        app:lt_title_color="@android:color/tab_indicator_text"
+        app:lt_title_textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        app:lt_trailing="@drawable/ic_baseline_edit_24"
+        />
+
+</LinearLayout>

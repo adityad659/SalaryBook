@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClosingBalanceDetails"
+    android:orientation="vertical"
+    >
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+
+       >
+       <FrameLayout
+           android:id="@+id/fragment_top"
+           android:layout_width="match_parent"
+           android:layout_height="110dp"
+           android:background="@color/colorPrimary">
+
+
+       </FrameLayout>
+       <TextView
+           android:id="@+id/owner_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="bottom"
+           android:layout_marginLeft="16dp"
+           android:layout_marginBottom="16dp"
+           android:layout_marginTop="16dp"
+           android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+           android:drawablePadding="40dp"
+           android:text="Salary"
+           android:textColor="#EDEDED"
+           android:textSize="20sp"
+           android:textStyle="bold" />
+       <LinearLayout
+           android:id="@+id/e2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="10dp"
+           android:layout_marginHorizontal="10dp"
+           android:layout_marginTop="18dp"
+           android:layout_below="@id/owner_name"
+           android:background="@drawable/attendance_btn"
+           android:orientation="vertical">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/w1"
+               android:padding="16dp"
+
+               >
+               <TextView
+                   android:id="@+id/m1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="Feb Salary"
+                   android:textAlignment="textStart"
+                   android:textColor="@color/text_black"
+                   android:textSize="16sp"
+                   android:textStyle="bold"
+                   />
+               <TextView
+                   android:id="@+id/Feb_salary"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="1000"
+                   android:textAlignment="textStart"
+                   android:textColor="@color/text_black"
+                   android:textSize="16sp"
+                   android:textStyle="bold"
+                   />
+           </LinearLayout>
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="#eaeaea" />
+           <LinearLayout
+               android:id="@+id/w2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/w1"
+               android:padding="16dp"
+
+               >
+               <TextView
+                   android:id="@+id/m2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="Jan Closing Balance"
+                   android:textAlignment="textStart"
+                   android:textColor="@color/text_black"
+                   android:textSize="16sp"
+                   android:textStyle="bold"            />
+               <TextView
+                   android:id="@+id/Jan_closing_balance"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="1000"
+                   android:textAlignment="textStart"
+                   android:textColor="@color/text_black"
+                   android:textSize="16sp"
+                   android:textStyle="bold"            />
+           </LinearLayout>
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="#eaeaea" />
+           <LinearLayout
+               android:id="@+id/w3"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/w2"
+               android:padding="16dp"
+               >
+               <TextView
+                   android:id="@+id/m3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="Feb Payments"
+                   android:textAlignment="textStart"
+                   android:textColor="@color/text_black"
+                   android:textSize="16sp"
+                   android:textStyle="bold"            />
+               <TextView
+                   android:id="@+id/Feb_Payments"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="1000"
+                   android:textAlignment="textStart"
+                   android:textColor="@color/text_black"
+                   android:textSize="16sp"
+                   android:textStyle="bold"            />
+           </LinearLayout>
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="#eaeaea" />
+           <LinearLayout
+               android:id="@+id/w4"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/w3"
+               android:padding="16dp"
+               >
+               <TextView
+                   android:id="@+id/m4"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="Feb Closing Balance"
+                   android:textAlignment="textStart"
+                   android:textColor="@color/text_black"
+                   android:textSize="16sp"
+                   android:textStyle="bold"            />
+               <TextView
+                   android:id="@+id/Feb_closing_balance"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="1000"
+                   android:textAlignment="textStart"
+                   android:textColor="@color/text_black"
+                   android:textSize="16sp"
+                   android:textStyle="bold"            />
+           </LinearLayout>
+       </LinearLayout>
+       <LinearLayout
+           android:id="@+id/w5"
+           android:layout_below="@+id/e2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+           android:padding="16dp"
+           android:background="@drawable/attendance_btn"
+
+           android:orientation="horizontal">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:text="Monthly Salary"
+               android:textAlignment="textStart"
+               android:textColor="@color/text_black"
+               android:textSize="16sp"
+               android:textStyle="bold"            />
+           <TextView
+               android:id="@+id/monthly_salary"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="1000"
+               android:textAlignment="textStart"
+               android:textColor="@color/text_black"
+               android:textSize="16sp"
+               android:textStyle="bold"
+               />
+       </LinearLayout>
+       <LinearLayout
+           android:id="@+id/e3"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+           android:layout_below="@id/w5"
+           android:background="@drawable/attendance_btn"
+           android:orientation="vertical">
+           <LinearLayout
+               android:id="@+id/w6"
+               android:layout_below="@+id/w5"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:padding="16dp"
+               >
+               <TextView
+                   android:id="@+id/m5"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="Feb Salary"
+                   android:textAlignment="textStart"
+                   android:textColor="@color/text_black"
+                   android:textSize="16sp"
+                   android:textStyle="bold"            />
+               <TextView
+                   android:id="@+id/sal1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="1000"
+                   android:textAlignment="textStart"
+                   android:textColor="@color/text_black"
+                   android:textSize="16sp"
+                   android:textStyle="bold"            />
+           </LinearLayout>
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="#eaeaea" />
+           <RelativeLayout
+               android:id="@+id/w7"
+               android:layout_below="@+id/w6"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="16dp"
+
+               >
+               <TextView
+                   android:id="@+id/no_Of_Presents1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginBottom="1dp"
+                   android:layout_weight="1"
+                   android:text="Present"
+                   android:textAlignment="textStart"
+                   android:textColor="@color/text_black"
+                   android:textSize="16sp"
+
+                   android:textStyle="bold" />
+               <TextView
+                   android:id="@+id/present"
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/no_Of_Presents1"
+                   android:layout_weight="1"
+                   android:text="Presents"
+                   android:textAlignment="textStart"
+                   android:textSize="12sp" />
+
+               <TextView
+                   android:id="@+id/sal2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginTop="5dp"
+                   android:text="1000"
+                   android:textAlignment="textStart"
+                   android:textColor="@color/text_black"
+                   android:textSize="16sp"
+                   android:textStyle="bold" />
+           </RelativeLayout>
+           <RelativeLayout
+               android:id="@+id/w9"
+               android:layout_below="@+id/w7"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="16dp"
+
+               >
+               <TextView
+                   android:id="@+id/no_Of_HalfDays1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginBottom="1dp"
+                   android:layout_weight="1"
+                   android:text="Half Days"
+                   android:textAlignment="textStart"
+                   android:textColor="@color/text_black"
+                   android:textSize="16sp"
+
+                   android:textStyle="bold" />
+               <TextView
+                   android:id="@+id/half_day"
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/no_Of_HalfDays1"
+                   android:layout_weight="1"
+                   android:text="Half Days"
+                   android:textAlignment="textStart"
+                   android:textSize="12sp" />
+
+               <TextView
+                   android:id="@+id/sal3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginTop="5dp"
+                   android:text="1000"
+                   android:textAlignment="textStart"
+                   android:textColor="@color/text_black"
+                   android:textSize="16sp"
+                   android:textStyle="bold" />
+           </RelativeLayout>
+       </LinearLayout>
+       <LinearLayout
+           android:layout_below="@id/e3"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:background="@drawable/attendance_btn"
+           android:layout_margin="10dp"
+
+           >
+           <LinearLayout
+               android:id="@+id/t3"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:layout_below="@id/e3"
+               android:orientation="vertical">
+               <LinearLayout
+                   android:id="@+id/w8"
+                   android:layout_below="@+id/e3"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginBottom="10dp"
+                   android:layout_marginHorizontal="10dp"
+                   android:layout_marginTop="10dp"
+                   android:padding="8dp"
+
+                   >
+                   <TextView
+                       android:id="@+id/feb_pay"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:text="Monthly Payments"
+                       android:textAlignment="textStart"
+                       android:textSize="16sp"
+
+                       />
+                   <TextView
+                       android:id="@+id/tot"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="1000"
+                       android:textAlignment="textStart"
+                       android:textColor="@color/text_black"
+                       android:textSize="16sp"
+                       android:textStyle="bold"
+                       />
+               </LinearLayout>
+
+
+           </LinearLayout>
+           
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/recview"
+               android:layout_below="@+id/t3"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="@drawable/attendance_btn"
+
+               />
+
+       </LinearLayout>
+
+   </RelativeLayout>
+
+</ScrollView>

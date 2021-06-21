@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "881356091925",
+    "project_id": "otp-verification-da925",
+    "storage_bucket": "otp-verification-da925.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881356091925:android:d22fd36f72cd8ef49bd41c",
+        "android_client_info": {
+          "package_name": "com.example.payroll"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "881356091925-m7hfonib702a9c6g5ju9sa5hu2s78ikj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.payroll",
+            "certificate_hash": "e05239d5418d3fde2fa621fb9ac2e86d2b9681a7"
+          }
+        },
+        {
+          "client_id": "881356091925-gm4fi050dbqolvdpfgjde1nmcrhkuirb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqpLllWqel-hqy0mly8jsvvK4V5G_P0rA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "881356091925-gm4fi050dbqolvdpfgjde1nmcrhkuirb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

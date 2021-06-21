@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".staff_payments">
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginHorizontal="50dp"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup">
+        <RadioButton
+            android:id="@+id/you_paid"
+            android:layout_width="wrap_content"
+            android:buttonTint="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="You Paid"
+            android:paddingLeft="5dp"
+            android:paddingRight="35dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/radobtn"
+            android:textSize="14sp"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/you_took"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="20dp"
+            android:buttonTint="@color/colorPrimary"
+            android:text="You Took"
+            android:paddingLeft="5dp"
+            android:paddingRight="35dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/radobtn"
+            android:textSize="14sp"
+            android:checked="false"/>
+
+    </RadioGroup>
+
+
+<com.google.android.material.textfield.TextInputLayout
+android:id="@+id/salary_amount"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="40dp"
+    android:layout_below="@id/radioGroup"
+android:layout_marginLeft="20dp"
+app:errorEnabled="true">
+<com.google.android.material.textfield.TextInputEditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Amount"
+    android:inputType="number"/>
+
+</com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/salary_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/salary_amount"
+        android:layout_marginLeft="20dp"
+        app:errorEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pay_date1"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/salary_description"
+        android:layout_marginLeft="20dp"
+        app:errorEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pay_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+android:inputType="none"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+android:layout_alignParentBottom="true"
+        android:background="@drawable/backgro_btn"
+        android:text=" Save Payment"
+        android:textAlignment="center"
+
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:onClick="confirmInput"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>

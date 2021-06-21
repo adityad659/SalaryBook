@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:viewBindingIgnore="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fragment_top"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimary"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textSize="20sp"
+            android:layout_margin="16dp"
+            android:textColor="@color/colorWhite"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"/>
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/personal"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/colorWhite"
+
+        >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Personal Info"
+        android:background="@color/colorWhite"
+
+        android:textSize="20sp"
+        android:layout_margin="16dp"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+    />
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eaeaea"
+        android:layout_marginHorizontal="16dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/YourNameInput"
+
+        >
+        <ImageView
+            android:id="@+id/e4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/name_edit"
+            android:layout_margin="16dp"
+           />
+        <TextView
+            android:id="@+id/no_Of_Presents1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/e4"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:text="Your Name"
+            android:layout_marginTop="8dp"
+            android:textAlignment="textStart"
+           />
+
+        <TextView
+            android:id="@+id/owner_nm"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/no_Of_Presents1"
+            android:layout_weight="1"
+            android:text="Aditya"
+            android:textAlignment="textStart"
+            android:layout_toRightOf="@id/e4"
+            android:textColor="@color/text_black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_edit_24"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="#eaeaea" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        >
+        <ImageView
+            android:id="@+id/e6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/phone_edit"
+            android:layout_margin="16dp"
+            />
+        <TextView
+            android:id="@+id/no_Of_Presents3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/e6"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:text="Phone Number"
+            android:layout_marginTop="8dp"
+
+            android:textAlignment="textStart"
+             />
+
+        <TextView
+            android:id="@+id/mobno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/no_Of_Presents3"
+            android:layout_weight="1"
+            android:text="Desai "
+            android:textAlignment="textStart"
+            android:layout_toRightOf="@id/e6"
+            android:textColor="@color/text_black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eaeaea"
+        android:layout_marginHorizontal="16dp"
+    />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Business Info"
+            android:background="@color/colorWhite"
+
+            android:textSize="20sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginVertical="16dp"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:layout_marginHorizontal="16dp"
+    android:background="#eaeaea" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BusinessNameInput"
+
+
+        >
+        <ImageView
+            android:id="@+id/e5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/busines_name_edit"
+            android:layout_margin="16dp"
+            />
+        <TextView
+            android:id="@+id/no_Of_Presents2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/e5"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:text="Business Name"
+            android:layout_marginTop="8dp"
+            android:textAlignment="textStart"
+            />
+
+        <TextView
+            android:id="@+id/bussiness_nm"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/no_Of_Presents2"
+            android:layout_weight="1"
+            android:text="Desai "
+            android:textAlignment="textStart"
+            android:layout_toRightOf="@id/e5"
+            android:textColor="@color/text_black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_edit_24"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eaeaea"
+    android:layout_marginHorizontal="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Security Settings"
+            android:background="@color/colorWhite"
+            android:layout_marginLeft="16dp"
+            android:layout_marginVertical="16dp"
+
+            android:textSize="20sp"
+
+            android:textColor="@color/colorTextPrimary"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:layout_marginHorizontal="16dp"
+    android:background="#eaeaea" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pass_chang"
+
+
+
+        >
+        <ImageView
+            android:id="@+id/e5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/passw_edit"
+            android:layout_margin="16dp"
+            tools:ignore="DuplicateIds" />
+        <TextView
+            android:id="@+id/no_Of_Presents2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/e5"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:text="Security Password"
+            android:textAlignment="textStart"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/text_black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/bussiness_nm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/no_Of_Presents2"
+            android:layout_weight="1"
+            android:text="Edit Password"
+            android:textAlignment="textStart"
+            android:layout_toRightOf="@id/e5"
+            android:textSize="12sp"
+            tools:ignore="DuplicateIds" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_edit_24"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="#eaeaea" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fingerprint_inp"
+
+
+
+
+        >
+        <ImageView
+            android:id="@+id/e5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/finger_edit"
+            android:layout_margin="16dp"
+            tools:ignore="DuplicateIds" />
+        <TextView
+            android:id="@+id/no_Of_Presents2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/e5"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+
+            android:text="Fingerprint Lock"
+            android:textAlignment="textStart"
+            android:textColor="@color/text_black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/bussiness_nm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/no_Of_Presents2"
+            android:layout_weight="1"
+            android:text="Edit Fingerprint"
+            android:textAlignment="textStart"
+            android:layout_toRightOf="@id/e5"
+            android:textSize="12sp"
+            tools:ignore="DuplicateIds" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_edit_24"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:layout_marginHorizontal="16dp"
+    android:background="#eaeaea" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:layout_marginLeft="16dp"
+            android:layout_marginVertical="20dp"
+
+            android:background="@color/colorWhite"
+            android:text="Others"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:layout_marginHorizontal="16dp"
+    android:background="#eaeaea" />
+
+
+    <Button
+        android:id="@+id/logout_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:drawableLeft="@drawable/ic_logout"
+        android:drawablePadding="16dp"
+        android:layout_marginVertical="8dp"
+        android:fontFamily="@font/roboto_medium"
+
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+
+        android:text="@string/logout"
+
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTextPrimary"
+
+        android:textSize="16sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="16dp"
+    android:background="#eaeaea" />
+
+</LinearLayout>
+

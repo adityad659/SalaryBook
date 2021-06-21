@@ -1,0 +1,29 @@
+<resources>
+
+    <string name="account_login">Account Login</string>
+    <string name="please_enter_a_valid_mobile_number_to_access_your_payroll_account">Please enter a valid mobile number to access your Payroll account</string>
+    <string name="_91">+91-</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="_1234567890">1234567890</string>
+
+    <string name="otp_verification1">OTP Verification</string>
+    <string name="enter_the_otp_sent_to">Enter the OTP sent to</string>
+    <string name="verify">Verify</string>
+    <string name="business_details">Business Details</string>
+    <string name="please_provide_details_as_asked_below_for_unique_account_creation">Please provide details as asked below for unique account creation</string>
+    <string name="add_staff">Add Staff</string>
+    <string name="please_fill_in_the_below_fields_to_create_your_staff_and_manage_their_expenses">Please fill in the below fields to create your staff and manage their expenses</string>
+    <string name="monthly"><b> Monthly </b>\n\n Fixed salary,salary payment per month,monthly payment</string>
+    <string name="per_hour_basis"><b> Per Hour Basis</b>\n \n Punch In-Punch Out time,Hourly payment\nsystem
+    </string>
+    <string name="daily"><b> Daily</b>\n\n Daily payment,payment on basis of number of \ndays worked</string>
+    <string name="work_basis"><b> Work Basis</b>\n\n Payment per piece,work basis payment,pay\nper nag</string>
+    <string name="weekly"><b> Weekly</b>\n\n Weekly Payment,7 days work cycle\n</string>
+    <string name="add_staff_s_salary">Add staff<sup>,</sup>s salary</string>
+    <string name="please_add_staff_s_monthly_salary">Please add staff\'s monthly salary</string>
+    <string name="please_add_staff_s_hourly_salary">Please add staff\'s hourly salary</string>
+    <string name="please_add_staff_s_daily_salary">Please add staff\'s Daily Salary</string>
+    <string name="opening_balance">Opening balance</string>
+    <string name="logout"><b> Logout</b></string>
+
+</resources>

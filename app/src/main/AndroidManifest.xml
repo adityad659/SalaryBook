@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.payroll">
+
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_icon"
+        android:label="Payroll"
+        tools:replace="label"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OtpVerification">
+        <activity android:name="com.example.payroll.AddStaff.FragProf">
+
+        </activity>
+        <activity android:name="com.example.payroll.Report" />
+        <activity android:name="com.example.payroll.ClosingBalanceDetails" />
+        <activity android:name="com.example.payroll.MonthlyPaymentDetails" />
+        <activity android:name="com.example.payroll.MonthlySalaryDetails" />
+        <activity
+            android:name="com.example.payroll.staff_payments"
+            android:theme="@style/AddStaff"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.example.payroll.Staff_salary_details" />
+        <activity android:name="com.example.payroll.ProfileDetails.BusinessNameEdit" />
+        <activity
+            android:name="com.example.payroll.ProfileDetails.BottomSheetFingerprint"
+            tools:ignore="Instantiatable" />
+        <activity android:name="com.example.payroll.ProfileDetails.Fingerprint_Lock" />
+        <activity
+            android:name="com.example.payroll.ProfileDetails.BottomSheetPassword"
+            tools:ignore="Instantiatable" />
+        <activity android:name="com.example.payroll.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.payroll.ProfileDetails.ConfirmPassword" />
+        <activity android:name="com.example.payroll.ProfileDetails.PasswordEdit" />
+        <activity android:name="com.example.payroll.ProfileDetails.YourNameEdit" />
+        <activity
+            android:name="com.example.payroll.AddStaff.OpeningBalance"
+            android:theme="@style/AddStaff"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity
+            android:name="com.example.payroll.AddStaff.WeeklySalary"
+            android:theme="@style/AddStaff"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.example.payroll.AddStaff.DailySalary"
+            android:theme="@style/AddStaff"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.example.payroll.AddStaff.PerHourSalary"
+            android:theme="@style/AddStaff"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.example.payroll.AddStaff.MonthlySalary"
+            android:theme="@style/AddStaff"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.example.payroll.AddStaff.SalaryType"
+            android:theme="@style/AddStaff"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.example.payroll.AddStaff.AddStaff"
+            android:theme="@style/AddStaff"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity
+            android:name="com.example.payroll.BusinessDetails"
+            android:theme="@style/AddStaff"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.example.payroll.VerifyOTPActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.example.payroll.SendOTPActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.example.payroll.MainActivity"
+            android:screenOrientation="portrait" />
+
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

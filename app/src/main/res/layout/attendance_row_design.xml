@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    android:orientation="vertical"
+    android:background="@drawable/attendance_btn"
+
+    android:paddingBottom="16dp">
+    <TextView
+        android:id="@+id/nam1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textSize="10sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+
+        android:textColor="@color/colorTextPrimary"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RadioGroup
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/radioGroup1">
+            <RadioButton
+                android:id="@+id/present"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Present"
+               android:paddingHorizontal="22dp"
+android:paddingVertical="10dp"
+                android:button="@color/colorWhite"
+                android:background="@drawable/present_selector"
+                android:textColor="@drawable/attendance_text_color"
+                android:textSize="10sp"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/half_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="15dp"
+                android:text="Half Day"
+                android:paddingHorizontal="22dp"
+                android:paddingVertical="10dp"
+                android:textAlignment="center"
+                android:button="@color/colorWhite"
+                android:background="@drawable/halfday_selector"
+                android:textColor="@drawable/attendance_text_color"
+                android:textSize="10sp"
+                android:checked="false"/>
+            <RadioButton
+                android:id="@+id/absent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="15dp"
+                android:text="Absent"
+                android:paddingHorizontal="22dp"
+                android:paddingVertical="10dp"
+                android:button="@color/colorWhite"
+                android:background="@drawable/absent_selector"
+                android:textColor="@drawable/attendance_text_color"
+                android:textSize="10sp"
+                android:checked="false"/>
+
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".AddStaff.SalaryType">
+
+    <TextView
+        android:id="@+id/samp1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:text="Select type of salary payment"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <FrameLayout
+        android:id="@+id/samp3"
+        android:layout_below="@id/samp1"
+        android:layout_above="@+id/samp2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+
+        android:id="@+id/radioGroup">
+        <RadioButton
+            android:id="@+id/monthly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/monthly"
+            android:buttonTint="@color/colorPrimary"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/radobtn"
+            android:textSize="14sp"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/per_hour_basis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/per_hour_basis"
+            android:buttonTint="@color/colorPrimary"
+
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/radobtn"
+            android:textSize="14sp"
+            android:checked="false"/>
+
+
+        <RadioButton
+        android:id="@+id/daily"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+            android:buttonTint="@color/colorPrimary"
+            android:text="@string/daily"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/radobtn"
+        android:textSize="14sp"
+            android:checked="false"/>
+
+
+        <RadioButton
+        android:id="@+id/work_basis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/work_basis"
+            android:buttonTint="@color/colorPrimary"
+
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/radobtn"
+        android:textSize="14sp"
+            android:checked="false"/>
+
+
+        <RadioButton
+        android:id="@+id/weekly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/weekly"
+            android:buttonTint="@color/colorPrimary"
+
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/radobtn"
+        android:textSize="14sp"
+            android:checked="false"/>
+
+
+
+    </RadioGroup>
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/samp2"
+        android:layout_below="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+android:id="@+id/salaryTypo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            android:background="@drawable/backgro_btn"
+            android:text="  Continue"
+            android:textAlignment="textStart"
+            android:drawableRight="@drawable/ic_continue_arrow"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+
+            android:textStyle="bold"
+            />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+
+
+
+</LinearLayout>
