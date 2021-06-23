@@ -1,6 +1,6 @@
 # SalaryBook
 SalaryBook is an employee salary & attendance management Android app, where you can manage all your staff and employee's attendance, record the work done by your staff or employees and their salary.
-**Languages used are :- Java & Kotlin.
+#Languages used are :- Java & Kotlin.
 **Database used :-SQLite.
 **Libraries used are 
 -Room
